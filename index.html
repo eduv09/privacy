@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &amp; Terms of Use</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --accent: #58a6ff;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --heading: #e6edf3;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    header .logo {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--heading);
+      letter-spacing: 0.02em;
+    }
+
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+    }
+
+    nav a { color: var(--muted); }
+    nav a:hover { color: var(--text); text-decoration: none; }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section + section {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 0.4rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--heading);
+      margin: 2rem 0 0.5rem;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+    }
+
+    p { margin-bottom: 0.85rem; }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 0.85rem;
+    }
+
+    ul li { margin-bottom: 0.35rem; }
+
+    .badge {
+      display: inline-block;
+      background: #1f3a5f;
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">&#128200; Personal Finance Dashboard</span>
+    <nav>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ───────────────────────── PRIVACY POLICY ───────────────────────── -->
+    <section id="privacy">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: <time datetime="2026-05-08">8 May 2026</time></p>
+
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy describes how the <strong>Personal Finance Dashboard</strong>
+        handles information when you use it. This is a personal, non-commercial application
+        built and operated by a single developer for their own private use. It is
+        <em>not</em> a commercial product or service offered to the public.
+      </p>
+
+      <h2>2. What Data Is Accessed</h2>
+      <p>
+        The application connects to <strong>Millennium BCP</strong> through the
+        <a href="https://enablebanking.com" target="_blank" rel="noopener noreferrer">Enable Banking</a>
+        platform, which uses the Open Banking (PSD2) standard. The only data retrieved is:
+      </p>
+      <ul>
+        <li>Bank account balances</li>
+        <li>Bank account transaction history</li>
+      </ul>
+      <p>
+        This access is strictly <span class="badge">read-only</span> — the application can
+        <strong>never</strong> initiate payments, transfers, or any write operations on your
+        bank account.
+      </p>
+
+      <h2>3. How Data Is Stored</h2>
+      <p>
+        All fetched bank data is stored <strong>exclusively on your local machine</strong>
+        (e.g., in your browser's local storage or a local database). It is never transmitted
+        to, or stored on, any remote server, cloud service, or third party.
+      </p>
+
+      <h2>4. Third-Party Sharing</h2>
+      <p>
+        No personal data is shared with any third party. The only external service involved
+        is Enable Banking, which acts as the regulated PSD2 intermediary between this
+        application and Millennium BCP. Enable Banking's own privacy practices are governed
+        by their separate privacy policy.
+      </p>
+
+      <h2>5. Tracking &amp; Analytics</h2>
+      <p>
+        This application does <strong>not</strong> use:
+      </p>
+      <ul>
+        <li>Cookies of any kind</li>
+        <li>Analytics or telemetry services</li>
+        <li>Advertising networks</li>
+        <li>User accounts or registration</li>
+        <li>Any form of tracking or profiling</li>
+      </ul>
+
+      <h2>6. Purpose of Processing</h2>
+      <p>
+        The sole purpose of accessing and processing your bank data is personal financial
+        management — viewing your own account information for your own benefit. No data is
+        processed for commercial, marketing, or any other purpose.
+      </p>
+
+      <h2>7. Legal Basis (GDPR)</h2>
+      <p>
+        This application is governed by Portuguese law and the
+        <strong>General Data Protection Regulation (GDPR)</strong> (Regulation (EU) 2016/679).
+        The legal basis for processing is <em>legitimate interest</em> of the sole user
+        (the developer) accessing their own financial data for personal use, as well as
+        <em>contractual necessity</em> with Enable Banking for PSD2 access.
+      </p>
+      <p>
+        As the sole data subject and controller, you retain all rights granted by the GDPR,
+        including the right to access, rectify, and erase your data — all of which you
+        exercise directly by managing the local files on your machine.
+      </p>
+
+      <h2>8. Data Retention</h2>
+      <p>
+        Data is retained only as long as you keep it on your local machine. You may delete
+        it at any time by clearing your browser's local storage or removing the relevant
+        local files.
+      </p>
+
+      <h2>9. Contact</h2>
+      <p>
+        Questions about this Privacy Policy can be directed to the repository owner via
+        <a href="https://github.com/eduv09" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </section>
+
+    <!-- ───────────────────────── TERMS OF USE ───────────────────────── -->
+    <section id="terms">
+      <h1>Terms of Use</h1>
+      <p class="last-updated">Last updated: <time datetime="2026-05-08">8 May 2026</time></p>
+
+      <h2>1. Personal Use Only</h2>
+      <p>
+        The Personal Finance Dashboard is a personal, non-commercial tool developed for
+        private use by a single individual. It is not intended for use by the general public,
+        and no service is offered to third parties.
+      </p>
+
+      <h2>2. No Warranty</h2>
+      <p>
+        This application is provided <strong>"as is"</strong>, without warranty of any kind,
+        express or implied. The developer makes no guarantees regarding the accuracy,
+        completeness, or availability of the financial data displayed.
+      </p>
+
+      <h2>3. Financial Data Accuracy</h2>
+      <p>
+        Data displayed is fetched from Millennium BCP via the Enable Banking PSD2 interface.
+        While every effort is made to display accurate information, discrepancies may occur.
+        This application should not be used as the sole basis for any financial decision.
+        Always verify important information directly with your bank.
+      </p>
+
+      <h2>4. Liability</h2>
+      <p>
+        To the fullest extent permitted by applicable Portuguese and EU law, the developer
+        shall not be liable for any direct, indirect, incidental, or consequential damages
+        arising from the use or inability to use this application.
+      </p>
+
+      <h2>5. Third-Party Services</h2>
+      <p>
+        This application relies on Enable Banking (a regulated PSD2 service) to access
+        banking data. The use of Enable Banking is subject to their own terms of service.
+        The developer is not responsible for the availability, accuracy, or conduct of
+        third-party services.
+      </p>
+
+      <h2>6. Security</h2>
+      <p>
+        You are responsible for the security of your own device and local data. The
+        application does not transmit your banking data externally, but you should ensure
+        your machine is adequately protected (updated OS, antivirus, disk encryption, etc.).
+      </p>
+
+      <h2>7. Governing Law</h2>
+      <p>
+        These terms are governed by the laws of <strong>Portugal</strong> and, where
+        applicable, European Union law. Any disputes shall be subject to the exclusive
+        jurisdiction of the Portuguese courts.
+      </p>
+
+      <h2>8. Changes to These Terms</h2>
+      <p>
+        These terms may be updated periodically. The "Last updated" date at the top of this
+        section will reflect the most recent revision.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 eduv09 &middot;
+    <a href="#privacy">Privacy Policy</a> &middot;
+    <a href="#terms">Terms of Use</a>
+  </footer>
+
+</body>
+</html>
